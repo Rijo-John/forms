@@ -47,10 +47,10 @@ $(document).ready(function () {
             divData += '<div class="row">';
             divData += '<div class="col-md-1"></div>';
             divData += '<div class="col-md-4"><label>&nbsp;</label>';
-            divData += '<input type="text" name="select_option_value'+attrDivcount+'[]" class="form-control" id="select_option_value' + divcount + '1" attr-count="1" placeholder="Value" >';
+            divData += '<input type="text" name="select_option_value'+attrDivcount+'[]" class="form-control" id="select_option_value' + divcount + '1" attr-count="1" placeholder="Value" required>';
             divData += '</div>';
             divData += '<div class="col-md-4"><label>&nbsp;</label>';
-            divData += '<input type="text" name="select_option_label'+attrDivcount+'[]" class="form-control" id="select_option_label' + divcount + '1" attr-count="1" placeholder="Label" >';
+            divData += '<input type="text" name="select_option_label'+attrDivcount+'[]" class="form-control" id="select_option_label' + divcount + '1" attr-count="1" placeholder="Label" required>';
             divData += '</div>';
             divData += '<div class="col-md-1"><label>&nbsp;</label>';
             divData += '<div class="text-center"><button type="button" onclick="addmoreoption(' + divcount + ');">+</button></div>';
@@ -116,10 +116,10 @@ function addmoreoption(divcount) {
     divData += '<div class="row">';
     divData += '<div class="col-md-1"></div>';
     divData += '<div class="col-md-4"><label>&nbsp;</label>';
-    divData += '<input type="text" name="select_option_value'+divcount+'[]" class="form-control" id="select_option_value' + divcount +count+ '" attr-count="' + count + '" placeholder="Value" >';
+    divData += '<input type="text" name="select_option_value'+divcount+'[]" class="form-control" id="select_option_value' + divcount +count+ '" attr-count="' + count + '" placeholder="Value" required>';
     divData += '</div>';
     divData += '<div class="col-md-4"><label>&nbsp;</label>';
-    divData += '<input type="text" name="select_option_label'+divcount+'[]" class="form-control" id="select_option_label' + divcount + count+'" attr-count="' + count + '" placeholder="Label" >';
+    divData += '<input type="text" name="select_option_label'+divcount+'[]" class="form-control" id="select_option_label' + divcount + count+'" attr-count="' + count + '" placeholder="Label" required>';
     divData += '</div>';
     divData += '<div class="col-md-1"><label>&nbsp;</label>';
     divData += '<div class="text-center"><button type="button" onclick="removeThisOption(' + divcount + ',' + count + ');">-</button></div>';
